@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="People" path="/api/people/" id="7403518c-a9fe-4eca-938b-6753bae36c81" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7403518c-a9fe-4eca-938b-6753bae36c81fileName">People</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="People" id="38e292fd-1b6b-450f-af47-45c4b73ce11c" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:peop="https://swapi.co/api/people/">peop:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="ced18525-c78d-4682-8875-aff1442d789c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://swapi.co</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://swapi.co/api/people/</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
